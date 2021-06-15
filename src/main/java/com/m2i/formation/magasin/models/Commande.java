@@ -1,4 +1,4 @@
-package models;
+package com.m2i.formation.magasin.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

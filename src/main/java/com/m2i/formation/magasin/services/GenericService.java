@@ -1,4 +1,4 @@
-package services;
+package com.m2i.formation.magasin.services;
 
 import java.util.List;
 

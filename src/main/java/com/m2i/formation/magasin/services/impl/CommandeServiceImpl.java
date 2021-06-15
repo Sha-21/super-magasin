@@ -1,7 +1,6 @@
-package services.impl;
+package com.m2i.formation.magasin.services.impl;
 
-import models.Categorie;
-import models.Commande;
+import com.m2i.formation.magasin.models.Commande;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public class CommandeServiceImpl extends GenericServiceImpl<Commande>{

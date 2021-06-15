@@ -1,4 +1,4 @@
-package dtos;
+package com.m2i.formation.magasin.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,5 +7,4 @@ import lombok.Data;
 @AllArgsConstructor
 public class GetCategorieDTO {
     private String nom;
-
 }

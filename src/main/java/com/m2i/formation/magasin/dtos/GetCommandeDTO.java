@@ -1,4 +1,4 @@
-package dtos;
+package com.m2i.formation.magasin.dtos;
 
 
 import lombok.AllArgsConstructor;

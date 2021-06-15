@@ -1,7 +1,6 @@
-package services.impl;
+package com.m2i.formation.magasin.services.impl;
 
-import models.Categorie;
-import models.Client;
+import com.m2i.formation.magasin.models.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public class ClientServiceImpl extends GenericServiceImpl<Client>{

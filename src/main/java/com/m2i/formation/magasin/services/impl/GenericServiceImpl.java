@@ -1,8 +1,7 @@
-package services.impl;
+package com.m2i.formation.magasin.services.impl;
 
-import models.Categorie;
 import org.springframework.data.jpa.repository.JpaRepository;
-import services.GenericService;
+import com.m2i.formation.magasin.services.GenericService;
 
 import java.util.List;
 

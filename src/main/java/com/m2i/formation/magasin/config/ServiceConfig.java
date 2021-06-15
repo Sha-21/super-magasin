@@ -1,16 +1,15 @@
-package config;
+package com.m2i.formation.magasin.config;
 
-import models.Produit;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import repositories.ICategorieRepository;
-import repositories.IClientRepository;
-import repositories.ICommandeRepository;
-import repositories.IProduitRepository;
-import services.impl.CategorieServiceImpl;
-import services.impl.ClientServiceImpl;
-import services.impl.CommandeServiceImpl;
-import services.impl.ProduitServiceImpl;
+import com.m2i.formation.magasin.repositories.ICategorieRepository;
+import com.m2i.formation.magasin.repositories.IClientRepository;
+import com.m2i.formation.magasin.repositories.ICommandeRepository;
+import com.m2i.formation.magasin.repositories.IProduitRepository;
+import com.m2i.formation.magasin.services.impl.CategorieServiceImpl;
+import com.m2i.formation.magasin.services.impl.ClientServiceImpl;
+import com.m2i.formation.magasin.services.impl.CommandeServiceImpl;
+import com.m2i.formation.magasin.services.impl.ProduitServiceImpl;
 
 @Configuration
 public class ServiceConfig {

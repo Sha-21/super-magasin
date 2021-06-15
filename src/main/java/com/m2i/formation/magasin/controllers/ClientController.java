@@ -1,11 +1,9 @@
-package controllers;
+package com.m2i.formation.magasin.controllers;
 
-import models.Categorie;
-import models.Client;
+import com.m2i.formation.magasin.models.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import services.impl.CategorieServiceImpl;
-import services.impl.ClientServiceImpl;
+import com.m2i.formation.magasin.services.impl.ClientServiceImpl;
 
 import java.util.List;
 

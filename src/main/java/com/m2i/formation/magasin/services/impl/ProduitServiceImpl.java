@@ -1,7 +1,6 @@
-package services.impl;
+package com.m2i.formation.magasin.services.impl;
 
-import models.Categorie;
-import models.Produit;
+import com.m2i.formation.magasin.models.Produit;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public class ProduitServiceImpl extends GenericServiceImpl<Produit> {
