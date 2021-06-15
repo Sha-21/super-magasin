@@ -3,6 +3,7 @@ package com.m2i.formation.magasin.models;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.engine.internal.Cascade;
 
 import javax.persistence.*;
 import java.util.List;
@@ -21,7 +22,7 @@ public class Commande {
     @JoinColumn(name = "client_id", nullable = false)
     private Client client;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.DETACH, fetch = FetchType.LAZY)
     @JoinTable(
             name="commande_has_produit",
             joinColumns = @JoinColumn(name = "commande_id", referencedColumnName = "id"),

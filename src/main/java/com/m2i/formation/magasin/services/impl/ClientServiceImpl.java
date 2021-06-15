@@ -7,4 +7,11 @@ public class ClientServiceImpl extends GenericServiceImpl<Client>{
     public ClientServiceImpl(JpaRepository<Client, Long> repository) {
         super(repository);
     }
+
+    // clientrepo repo;
+    // repo;
+
+    /*
+
+    * */
 }
