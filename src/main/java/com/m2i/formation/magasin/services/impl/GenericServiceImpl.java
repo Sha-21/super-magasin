@@ -10,6 +10,7 @@ public class GenericServiceImpl<T> implements GenericService<T> {
     private JpaRepository<T, Long> repository;
 
     public GenericServiceImpl(JpaRepository<T, Long> repository) {
+        this.repository = repository;
     }
 
     @Override

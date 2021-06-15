@@ -18,6 +18,7 @@ public class ServiceConfig {
     {
         return new CategorieServiceImpl(categorieRepository);
     }
+
     @Bean
     public ClientServiceImpl clientServiceFactory(IClientRepository clientRepository)
     {

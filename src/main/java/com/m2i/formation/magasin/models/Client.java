@@ -14,10 +14,11 @@ import javax.persistence.*;
 public class Client {
 
     @Id
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(name="nom")
     private String nom;
+    @Column(name="prenom")
     private String prenom;
 
 }

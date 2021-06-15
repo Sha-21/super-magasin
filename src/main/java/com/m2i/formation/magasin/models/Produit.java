@@ -13,10 +13,12 @@ import javax.persistence.*;
 @Table(name = "produit")
 public class Produit {
     @Id
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name="nom")
     private String nom;
+    @Column(name="prix")
     private double prix;
 
     @ManyToOne

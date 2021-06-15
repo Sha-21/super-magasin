@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Commande {
     @Id
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
