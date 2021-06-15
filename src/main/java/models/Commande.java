@@ -4,10 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
@@ -18,4 +16,16 @@ public class Commande {
     @Id
     @Column(name = "id", nullable = false)
     private Long id;
+
+    @ManyToOne
+    @JoinColumn(name = "client_id", nullable = false)
+    private Client client;
+
+    @ManyToMany
+    @JoinTable(
+            name="commande_has_produit",
+            joinColumns = @JoinColumn(name = "commande_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "produit_id", referencedColumnName = "id")
+    )
+    private List<Produit> produits;
 }
